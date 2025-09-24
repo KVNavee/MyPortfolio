@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 95vw;
+            background:linear-gradient(140deg,rgba(255, 255, 255, 0.21),rgba(0, 0, 0, 0.941)), url(./pf_bg.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            animation-name: bg;
+            animation-duration: 1s;
+            padding-bottom: 30px;
+            margin-top: 40vw;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes bg{
+            from{
+                transform: rotateY(-180deg);
+            }
+            to{
+                transform: rotateY(0deg);
+            }
+        }
+        h2{
+            margin: 2vw;
+            margin-left: 5vw;
+            margin-top: 2vh;
+            color: black;
+            text-shadow: 0px 0px 5px white,0px 0px 5px white;
+        }
+        h3{
+            margin-left: 2vw;
+            color: white;
+            text-shadow: 3px 3px black;
+        }
+        p{
+            color: white;
+            margin-left: 3vw;
+        }
+        nav{
+            height: 10vh;
+            display: flex;
+            gap: 20px;
+            justify-content: start;
+            align-items: center;
+            margin-top: 10vh;
+            margin-left: 2vw;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0px 0px 5px white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .card{
+            background-color: transparent;
+            box-shadow: 0px 0px 5px white;
+            width: 40vw;
+            border-radius: 10px;
+            padding: 15px;
+            margin-left: 6vw;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav>  
+            <a href="./portfolio.html">Home Page</a>
+            <a href="./Edu-port.html">Education Details</a>
+            <a href="./T&Ce-port.html">Technial Skills and Certification</a>
+            <a href="./Pro&WS-port.html">Projects and Workshops</a>
+            <a href="./Strengths.html">Strengths & Others</a>
+        </nav>
+        <h2>STRENGTHS & OTHERS</h2>
+        <div class="card">
+        <h3>STRENGTHS :</h3>
+        <p>Dedication towards Works</p>
+        <P>Having good Problem Solving and Analytical skills</P>
+        <p>Quick adoption to any work Environment</p>
+        <p>Good patient at listening</p>
+        </div>
+        <div class="card">
+            <h3>HOBBIES :</h3>
+            <p>Listening to music</p>
+            <p>Playing games</p>
+        </div>
+        <div class="card">
+            <h3>ADDRESS :</h3>
+            <p>Vennuru Village, Kondapi Mandal</p>
+            <p>Prakasam District(Ongole)</p>
+            <p>Andhra Pradesh</p>
+        </div>
+        <div class="card">
+            <h3>PERSONAL INFO :</h3>
+            <p>Name : K.Venkata Naveen</p>
+            <p>DOB : 10-oct-2003</p>
+            <p>Gmail : venkatnaveenk10@gmail.com</p>
+            <p>Mobile No : 9391550136</p>
+            <p>Mother Name : K.Ramanamma(Daily Worker)</p>
+            <p>Younger Brother : K.Venu Gopal(currently Studying)</p>
+        </div>
+    </div>
+</body>
+</html>

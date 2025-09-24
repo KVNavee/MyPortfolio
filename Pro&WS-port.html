@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 95vw;
+            background:linear-gradient(140deg,rgba(255, 255, 255, 0.21),rgba(0, 0, 0, 0.941)), url(./pf_bg.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            animation-name: bg;
+            animation-duration: 1s;
+            padding-bottom: 30px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes bg{
+            from{
+                transform: rotateY(-180deg);
+            }
+            to{
+                transform: rotateY(0deg);
+            }
+        }
+        h2{
+            margin: 2vw;
+            margin-left: 5vw;
+            margin-top: 2vw;
+            color: black;
+            text-shadow: 0px 0px 5px white,0px 0px 5px white;
+        }
+        h3{
+            margin-left: 5vw;
+            color: white;
+            text-shadow: 3px 3px black;
+        }
+        p{
+            color: white;
+        }
+        ul li{
+            color: white;
+            margin-left: 2vw;
+        }
+        ul{
+            background-color: transparent;
+            box-shadow: 0px 0px 5px white;
+            width: 50vw;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: 6vw;
+        }
+        a{
+            color: black;
+            text-shadow: 0px 0px 3px white;
+            text-decoration: none;
+        }
+        #images{
+            height: 20vh;
+            width: 50vw;
+            background-color: transparent;
+            margin-left: 2vw;
+        }
+        #images img{
+            height: 100%;
+            width: 15%;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: 1s;
+        }
+        #images img:hover{
+            width: 35%;
+        }
+        #bg-pro{
+            background-color: transparent;
+            box-shadow: 0px 0px 5px white;
+            width: 60vw;
+            border-radius: 10px;
+            padding: 15px;
+            margin-left: 6vw;
+        }
+        nav{
+            height: 10vh;
+            display: flex;
+            gap: 20px;
+            justify-content: start;
+            align-items: center;
+            margin-top: 30vh;
+            margin-left: 2vw;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0px 0px 5px white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav>  
+            <a href="./portfolio.html">Home Page</a>
+            <a href="./Edu-port.html">Education Details</a>
+            <a href="./T&Ce-port.html">Technial Skills and Certification</a>
+            <a href="./Pro&WS-port.html">Projects and Workshops</a>
+            <a href="./Strengths.html">Strengths & Others</a>
+        </nav>
+        <h2>PROJECTS & WORKSHOPS</h2>
+        <h3>WORKSHOPS :</h3>
+        <ul>
+            <li><p>
+                Project Excellence Training – ExcelR (Oct - Nov 2024)<br> 
+                Completed 30-hour live training on real world project planning and Execution. 
+            </p></li>
+            <li>
+                <p>Full Stack Web Development Bootcamp & Hackathon – BrainOVision (Feb 2023)<br> 
+                   Built full stack web apps in a 2-days bootcamp and 24hr hackathon.</p>
+            </li>
+            <li>
+                <p>Python With Django Workshop – Naresh Technologies (Nov 2023)<br> 
+                   Worked on Django framework in a 3-days hands-on workshop.</p>
+            </li>
+        </ul>
+        <h3>PROJECT :</h3>
+        <div id="bg-pro">
+            <strong><p class="p1">Developed a website on collection of recipes and delivery :</p></strong>
+        <p class="p1">The below link provided contains the visual representation of the project. In which the customer can order<br> 
+           Breakfast, lunch, dinner, Ice creams and juices. The visuals of the restaurants and locations are also<br> 
+           provided in website.</p>
+        <p class="p1">To View the Project Interface <a href="https://kvnavee.github.io/Project5-218A1A4249/">Click Here</a></p>
+        <div id="images">
+            <img src="pro-port1.png" alt="">
+            <img src="pro-port2.png" alt="">
+            <img src="pro-port3.png" alt="">
+            <img src="pro-port4.png" alt="">
+            <img src="pro-port5.png" alt="">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

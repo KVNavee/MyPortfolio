@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 95vw;
+            background:linear-gradient(140deg,rgba(255, 255, 255, 0.21),rgba(0, 0, 0, 0.941)), url(./pf_bg.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            animation-name: bg;
+            animation-duration: 1s;
+            padding-top: 10vw;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes bg{
+            from{
+                transform: rotateY(-180deg);
+            }
+            to{
+                transform: rotateY(0deg);
+            }
+        }
+        h2{
+            margin: 2vw;
+            margin-left: 5vw;
+            margin-top: 2vw;
+            color: black;
+            text-shadow: 0px 0px 5px white,0px 0px 5px white;
+        }
+        h3{
+            margin-left: 1vw;
+            color: white;
+            text-shadow: 3px 3px black;
+        }
+        ul li{
+            color: white;
+            list-style: none;
+        }
+        .div-bg{
+            background-color: transparent;
+            box-shadow: 0px 0px 5px white;
+            padding: 20px 20px;
+            width: 60vw;
+            margin-left: 5vw;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        nav{
+            height: 10vh;
+            display: flex;
+            gap: 20px;
+            justify-content: start;
+            align-items: center;
+            margin-top: 20vh;
+            margin-left: 2vw;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0px 0px 5px white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav> 
+            <a href="./portfolio.html">Home Page</a> 
+            <a href="./Edu-port.html">Education Details</a>
+            <a href="./T&Ce-port.html">Technial Skills and Certification</a>
+            <a href="./Pro&WS-port.html">Projects and Workshops</a>
+            <a href="./Strengths.html">Strengths & Others</a>
+        </nav>
+        <h2>EDUCATIONAL QUALIFICATION</h2>
+        <div class="div-bg">
+            <h3>BACHELOR DEGREE :</h3>
+        <ul>
+            <li>College Name : RISE Krishna Sai Prakasam Group Of Institutions (Ongole)</li>
+            <li>Program : Bachelor of Tchnology</li>
+            <li>Course : CSE-AI and ML</li>
+            <li>Course-duration : 2021-2025</li>
+            <li>B.Tech Score : 7.89 CGPA</li>
+        </ul>
+        </div>
+        <div class="div-bg">
+            <h3>INTERMEDIATE :</h3>
+        <ul>
+            <li>College Name : Sri Chaitanya Junior College (Pernamitta, Ongole)</li>
+            <li>Course : MPC</li>
+            <li>Course-duration : 2019-2021</li>
+            <li>Percentage : 95.5%</li>
+        </ul>
+        </div>
+        <div class="div-bg">
+            <h3>SCHOOLING : </h3>
+        <ul>
+            <li>School Name : Z.P.High School (Vennuru,Kondapi,Ongle)</li>
+            <li>Passed Out Year : 2019</li>
+            <li>CGPA : 9.8</li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

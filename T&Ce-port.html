@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            margin-top: 5vw;
+            width: 95vw;
+            background:linear-gradient(140deg,rgba(255, 255, 255, 0.21),rgba(0, 0, 0, 0.941)), url(./pf_bg.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            animation-name: bg;
+            animation-duration: 1s;
+            padding-top: 5vw;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5vw;;
+        }
+        @keyframes bg{
+            from{
+                transform: rotateY(-180deg);
+            }
+            to{
+                transform: rotateY(0deg);
+            }
+        }
+        h2{
+            margin: 2vw;
+            margin-left: 5vw;
+            margin-top: 1vw;
+            color: black;
+            text-shadow: 0px 0px 5px white,0px 0px 5px white;
+        }
+        h3{
+            color: white;
+            text-shadow: 3px 3px black;
+        }   
+        p{
+            margin-left: 1vw;
+            color: white;
+        }
+        a{
+            color: black;
+            text-shadow: 0px 0px 3px white;
+            text-decoration: none;
+        }
+        .div-bg{
+            background-color: transparent;
+            box-shadow: 0px 0px 5px white;
+            padding: 20px 20px;
+            width: 60vw;
+            margin-left: 5vw;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        nav{
+            height: 10vh;
+            display: flex;
+            gap: 20px;
+            justify-content: start;
+            align-items: center;
+            margin-top: 20vh;
+            margin-left: 2vw;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0px 0px 5px white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav>  
+            <a href="./portfolio.html">Home Page</a>
+            <a href="./Edu-port.html">Education Details</a>
+            <a href="./T&Ce-port.html">Technial Skills and Certification</a>
+            <a href="./Pro&WS-port.html">Projects and Workshops</a>
+            <a href="./Strengths.html">Strengths & Others</a>
+        </nav>
+        <h2>TECHNICAL SKILLS & CERTIFICATION</h2>
+        <div class="div-bg">
+            <h3>WEB DEVELOPMENT :</h3>
+        <p>HTML : Text-formating tags,Table Creation & Alignment,Forms,Etc...</p>
+        <p>CSS : Selectors,transitions,Animations,etc...</p>
+        <p>JavaScript : DOM(Direct Methods,Indirect Methods),Conditions,Looping statements,etc...</p>
+        </div>
+        <div class="div-bg">
+            <h3>PROGRAMMING LANGUAGES : </h3>
+        <p>C Programming : Good in Basics</p>
+        <p>Java Programming : Good in Basics</p>
+        <p>Python Programming : Good in Basics, Conditional Statements, Loops, OOps Concepts,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Problem Solving,Searching(Linear and Binary Search)</p>
+        </div>
+        <div class="div-bg">
+            <h3>DATABASE : </h3>
+        <p>SQL : Oracle SQL-Conditional queries, group by clause,Sub queries,joins, CTE Expression & Data Normalisation</p>
+        <h3>CERTIFICATION : </h3>
+           <p>An NPTEL Certificate in joy Computing Using Python</p>
+           <p>To Visit Certificate <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs57/Course/NPTEL24CS57S56400020830789234.pdf">Click Here</a></p>
+        </div>
+    </div>
+</body>
+</html>
